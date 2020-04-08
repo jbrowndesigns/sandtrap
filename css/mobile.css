@@ -1,0 +1,397 @@
+/* Style Sheet For Sand Trap */
+
+
+/* To Do
+
+
+
+*/
+
+
+
+/****     TEST SECTION      ****/
+
+
+
+/***
+
+
+
+
+
+***/
+
+
+
+
+
+
+ul, dl {
+   
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   
+}
+/* Hides desktop content */ /* removed #content to show text */
+ .bannerImage, .desktop, .logoImage, #containerHeader, #content, .column1, .column2, .column3 {
+	
+	display: none;
+	
+ }
+ 
+	 
+
+h1, h2, h3, h4, h5, h6  {
+	
+	color: #32CD32;
+	font-family: cursive, monospace, georgia;
+	
+}
+ dt, dd {
+	 text-align: left;
+	 line-height: 1.4em;
+	 padding: 2.5px;
+	 
+ }
+ 
+ li  {
+   
+    text-align: center;
+    line-height: 1.4em;
+	  padding: 2.5px;
+   
+ }
+ dt {
+   
+   font-weight: bold;
+   
+ }
+ 
+ 
+
+
+/***************** Mobile Layout *******************/
+
+/* Set breakpoint at > 720 px */
+
+#container {
+	
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+ 
+#content {
+	
+	margin-left: auto;
+  margin-right: auto;
+  
+}
+ 
+ 
+ #feature, .article, #mobileFeature {  /* added in to show on mobile displays */
+	
+	text-align: center;
+  padding: 25px;
+	margin-bottom: 1em;
+	background-color: #efefef;
+	line-height: 1.4em;
+}
+
+#mobileFeature p {
+  text-align: left;
+  padding: 25px 0;
+  font-size: 1rem;
+  
+}
+ 
+img {
+	
+	max-width: 100%;
+	
+}
+ 
+ 
+ header {
+	
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	 
+ }
+ 
+
+ /* Nav Section */ /* Added in display:block to find the correcrt placement for it */
+ nav {
+	 
+	 font-family: Georgia, "Times New Roman", serif;
+	 font-size: 1.25em;
+	 font-weight: bold;
+	 text-align: center;
+   display: block;
+   color: #7CFC00;
+	 
+ }
+ 
+ nav ul {
+	 
+	 text-align: center;
+	 padding: 0;
+	 margin-top: 0.5em;
+	 margin-bottom: 0.5em;
+	 display: block;
+	 
+ }
+ 
+ nav li {
+	
+	display: block;
+	text-align: center;
+	background-color: #1c1c1c;
+	border-radius: .1em;
+	list-style-type: none;
+	margin: 0.1em;
+	padding: 0.5em;
+	 
+ }
+ 
+ nav li a {
+	 
+	 text-align: center;
+	 color: #7CFC00;
+	 text-decoration: none;
+	 display: block;
+	 
+ }
+
+
+ main {
+	
+	display: block;
+	font-size: 1em;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: center;
+	background-color: #ffffff;
+	font-family: monospace, sans-serif;
+	
+ }
+ 
+ #featureMobile {
+	
+	text-align: center;
+  padding: 5px;
+	margin-bottom: 1em;
+	background-color: #000000;
+	border-radius: 1.5em;
+
+ 
+ }
+ 
+
+ #menu {
+	 
+    width: auto;
+    background-color: #FFFFFF;
+    border-radius: 3em; /* OG was 1.5em */
+    padding: 5px 20px 10px 20px;
+    margin-bottom: 30px;
+ 	  -moz-box-shadow: 5px 5px 5px 5px #777777;
+	  -webkit-box-shadow: 5px 5px 5px 5px #777777;
+	  box-shadow: 5px 5px 5px 5px #777777;
+ }
+ 
+ #menuBottom {
+  
+    width: auto;
+    background-color: #FFFFFF;
+    border-radius: 3em;
+    padding: 5px 20px 10px 20px;
+    margin-bottom: 30px;
+ 	  -moz-box-shadow: 5px 5px 5px 5px #777777;
+	  -webkit-box-shadow: 5px 5px 5px 5px #777777;
+  	box-shadow: 5px 5px 5px 5px #777777;
+   
+ }
+ 
+ footer {
+	 
+	display: block;
+	padding: 1em;
+	font-size: .75em;
+	text-align: center;
+	background-color: #1c1c1c;
+	color: #ffffff;
+  text-decoration: none;
+
+}
+
+/*************      Class Selectors       *****************/
+
+
+/*****
+.mobileLogoImage {
+	  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+	  height: 650px;
+	  border-radius: 2em;
+
+}
+*****/
+
+
+.mobile {
+  
+  text-align: center; /* effects menu slider button alignment in iOS */
+  /* text-align-last: center; */
+  
+}
+
+
+.mobileCorrection {
+  
+  text-align: left;
+  
+}
+
+.drinks {
+  
+  text-align: center;
+  
+}
+
+.menuHeader{
+  
+  font-size: 150%;
+  color: /*#FFFFFF*/ #7CFC00;
+  
+}
+
+.menuHeader2{
+  
+  font-size: 150%;
+  color: #FFFFFF;
+  
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.eat-button {
+	display: block;
+	width: 260px;
+	color: #fff;
+	background-color: #408FC6;
+	padding: 15px 15px;
+	text-align: center;
+	border-radius: 2em;
+	margin: 2rem auto 2rem auto;	
+}
+
+.button {
+    
+    background-color: #32CD32;
+    border-style: outset;
+    border-color: lightgreen;
+    border-radius: 2em;
+    color: #000000;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+.buttonMenu {
+    
+    background-color: #32CD32;
+    border-style: outset;
+    border-color: lightgreen;
+    border-radius: 2em;
+    color: #000000;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+a.mobile:link, a.mobile:visited {
+    
+    text-decoration: none;
+    background-color: #32CD32;
+    border-style: outset;
+    border-color: lightgreen;
+    border-radius: 2em;
+    color: black;
+    font-size: 1.2em;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+a:link{
+  
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}

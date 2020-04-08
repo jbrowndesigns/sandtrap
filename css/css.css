@@ -1,0 +1,423 @@
+/* To do List */
+
+/*****
+
+
+
+****/
+
+/****                             TEST SECTION
+
+*/
+
+
+.menu-content {
+    
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 0 0 50px;
+}
+.collapsible-menu {
+    background-color: rgb(255, 255, 255);
+    padding: 0px 30px;
+    border-bottom: 3px solid #CDE700;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.collapsible-menu-dl {
+    list-style-type: none;
+    padding: 0;
+}
+.collapsible-menu-a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.collapsible-menu-label {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 56px;
+    display: block;
+    cursor: pointer;
+    background: url(menu.png) no-repeat left center;
+    padding: 10px 0 10px 50px;
+}
+input#menu {
+    display: none;
+}
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+
+
+/**/
+
+
+ /* Style Sheet For Sand Trap */
+
+.mobileBanner, a.mobile:link, .mobile, .mobileCorrection, .mobileLogoImage, #mobileFeature {
+	
+	display: none;
+	
+}
+
+ul, dl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6  {
+	
+	color: #32CD32;
+	text-align: center;
+		font-family: cursive, monospace, georgia;
+
+	
+}
+ dt, dd, li {
+	 
+	 text-align: center;
+	 padding: 5px;
+	 line-height: 2.0em;
+	 
+	 
+ }
+ 
+ dt {
+   font-weight: bold;
+ }
+ 
+ img {
+	 
+	/** max-width: 100%; **/
+	 display: inline-block;
+	 margin: auto;
+ }
+
+ header {
+	 
+	 display: block;
+	 width: 100%;
+	 margin: 0 auto;
+	 
+ }
+ 
+ main {
+	 
+	 display: block;
+	 font-family: 'Gloria Hallelujah', cursive;
+	 font-size: 1em;
+	 
+	 }
+	 
+	 body {
+	   
+	   height: 100%;
+	   
+	 }
+ 
+  footer {
+	
+	background-color: black;
+	text-align: center;
+	color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	max-width: 100%;
+	display: block;
+	
+}
+  #spacing {
+    
+    padding: 30px;
+    
+    
+  }
+  
+  #containerHeader {
+	  
+	 width: 95%;
+	 margin-top: -15px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 background-color: white;
+	 
+ }
+  
+  
+  
+  #container {
+	  
+	 width: 95%;
+	 margin-top: 25px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 background-color: white;
+	 padding-top: 100px; /* added in to help correct page title spacing */
+	 /* background-color: green;   used to show boundary */
+	 
+ }
+ 
+ #menu {
+	
+	
+	/* width: 95%; */
+	margin-top:10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: dashed;
+	border-width: 5px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	background-color: white;  /* used to show boundary */
+	
+	 
+ }
+ 
+ #menuBottom { /* Used to remove solid border line */
+	 
+	margin-top:10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	
+ }
+ 	
+ 	#content {
+	
+	margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  overflow: auto;
+  
+}
+
+ #feature, #footer {
+	
+	margin: 1%;
+	
+}
+ 	
+ #feature, .article {
+	
+	text-align: left; /* changed value... view on larger display to insure it works properly ***/
+  /** text-align-last: center; not sure why this was added in ***/
+  padding: 25px;
+	margin-bottom: 5px;
+	background-color: #efefef;
+	line-height: 1.4em;
+	
+
+}
+
+ 
+
+/************** Liquid Layout ******************/
+
+ /* Style for the nav specifies text properties */
+		nav {
+		  
+				font-family: 'Montserrat', sans-serif;
+				font-size: 1.25em;
+				font-weight: bold;
+				text-align: center;
+				
+			}
+ 
+ 
+ 
+ /* Style specifies margin and padding for the unordered list within the nav */
+		nav ul {
+		  
+			margin: 0;
+			padding-left: 0.50%;
+			padding-right: 0.50%;
+			
+		}
+			
+	/* Style for nav list items specifies a border radius, border, margin, width, and padding (Adds spacing around links) */
+		nav li {
+			
+			background-color: black;
+			list-style-type: none;
+			display: inline;
+			float: left;
+			white-space: nowrap;
+			border-radius: 0;
+			border-top: solid black;
+			border-bottom: solid black;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px 0px 10px 0px;
+			width: 20%;
+			
+		}
+			
+	/* Style for nav links specifies display and padding (creates a unified bar in desktop view)*/
+		nav li a {
+		  
+			display: inline-block;
+			padding: 0.7em;
+			color: #7CFC00;
+			text-decoration: none;
+			
+		}
+
+    body {
+	
+	max-width: 100%;
+	margin: auto;
+	background-color: black;
+	
+}
+
+/******** Class Section ********/
+
+ .bannerImage {
+   
+   max-width: 100%;
+   
+ }
+ 
+ .eventPictures {
+  
+    max-width: 80%;
+    border-style: outset;
+    border-color: #32CD32;
+    
+   
+ }
+ 
+
+  .logoImage {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    max-height: 100%;
+    
+    
+  }
+
+  .row {
+  
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+  
+  .main {
+  
+  flex: 70%;
+  padding: 20px;
+  align-self: center;
+}
+
+  .side {
+  
+  flex: 30%;
+  padding: 20px;
+  
+}
+
+
+ 
+ .textCorrection {
+   
+  text-align: left; /* changed value... view on larger display to insure it works properly ***/
+  text-align-last: center;
+  padding: 25px;
+	margin-bottom: 5px;
+	background-color: #efefef;
+	line-height: 1.4em;
+   
+   
+ }
+ 
+ .drinks {
+   
+   text-align: center;
+   
+ }
+.eat-button {
+	display: block;
+	width: 260px;
+	color: #fff;
+	background-color: #408FC6;
+	padding: 15px 15px;
+	text-align: center;
+	border-radius: 2em;
+	margin: 2rem auto 2rem auto;	
+}
+  .button {
+  
+    background-color: #32CD32;
+    border-style: outset;
+    border-color: lightgreen;
+    border-radius: 2em;
+    color: #000000;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    cursor: pointer;
+    
+}
+
+    
+  .column1, .column2, .column3 {
+	
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+	overflow: hidden;
+
+	
+}
+
+  .column3 {
+	margin-right: 0%;
+}
+	
+	
+  a.number:link {
+  
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.eventcolumn1, .eventcolumn2, .eventcolumn3, .eventcolumn4 {
+  
+  width: 24%;
+  float: left;
+  margin: 1%;
+  
+  
+}
+
+.eventcolumn4 {
+ 
+ margin-right: 0%;
+  
+}
+
+
+
