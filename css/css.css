@@ -355,6 +355,7 @@ h1, h2, h3, h4, h5, h6  {
 .eat-button {
 	display: block;
 	width: 260px;
+	font-size: 1.1rem;
 	color: #fff;
 	background-color: #408FC6;
 	padding: 15px 15px;

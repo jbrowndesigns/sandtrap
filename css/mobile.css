@@ -291,7 +291,8 @@ img {
 
 .eat-button {
 	display: block;
-	width: 260px;
+  width: 260px;
+  font-size: 1.1rem;
 	color: #fff;
 	background-color: #408FC6;
 	padding: 15px 15px;
