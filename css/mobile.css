@@ -160,7 +160,7 @@ img {
  nav li a {
 	 
 	 text-align: center;
-	 color: #7CFC00;
+	 color: #7CFC00!important;
 	 text-decoration: none;
 	 display: block;
 	 
