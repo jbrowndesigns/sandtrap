@@ -331,6 +331,9 @@ img {
 button[type="submit"] {
   width: 50%;
 }
+input[type="text"] {
+  font-size: 18px;
+}
 /*********************************** Footer  */
 .footer {
   background: var(--primary-color);
