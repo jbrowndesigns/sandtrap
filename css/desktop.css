@@ -10,7 +10,7 @@
   --img-dine: url("../img/burger.jpg") no-repeat center center/cover;
   --img-drink: url("../img/drink-pour.jpg") no-repeat center center/cover;
   --img-events: url("../img/show.jpg") no-repeat center center/cover;
-  --img-inside: url("../img/inside.png") no-repeat left center/cover;
+  --img-inside: url("../img/inside.png") no-repeat center center/cover;
   --img-contact: url("../img/poolTable.JPG") no-repeat center center/contain;
 }
 /***************************** Core Styles */
@@ -19,7 +19,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.desktop {
+.mobile {
   display: none;
 }
 body {
@@ -31,6 +31,7 @@ ul {
 }
 p {
   line-height: 1.4;
+  font-size: 1.5rem;
 }
 a {
   text-decoration: none;
@@ -44,6 +45,12 @@ h3,
 h4 {
   font-family: "Satisfy", cursive;
   font-weight: normal;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
 }
 img {
   width: 100%;
@@ -79,24 +86,93 @@ img {
 .line {
   text-decoration: underline;
 }
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: var(--menu-overlay);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  transition: all 1s ease-in-out;
+}
+.btn:hover {
+  opacity: 0.7;
+  background: var(--overlay-color);
+}
 /************************************* Banner */
 .banner {
   height: 175px;
   background: var(--logo);
 }
 .food-banner {
-  height: 175px;
+  height: 500px;
   background: var(--img-dine);
 }
 .drink-banner {
-  height: 175px;
+  height: 500px;
   background: var(--img-drink);
 }
-/***************************** Hero Header */
+/************************************ Navbar */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  height: 70px;
+  z-index: 10;
+  font-size: 1.5rem;
+}
+#navbar a {
+  color: #fff;
+}
+#navbar a:hover {
+  color: var(--link-hover);
+  transition: 1s;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar li {
+  margin: 0 3rem;
+}
+#navbar .current {
+  border-bottom: 2px solid var(--link-hover);
+  padding-bottom: 5px;
+}
+
+/*********************************** Index Header */
+.flex {
+  display: flex;
+}
+.flex #showcase {
+  background: var(--overlay-color);
+  color: #fff;
+  height: 100vh;
+  width: 50vw;
+  position: relative;
+}
+.flex #showcase h2 {
+  font-size: 3rem;
+}
+.flex #showcase .btn {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+.desktop.banner {
+  height: 100vh;
+  width: 50vw;
+  background: var(--logo);
+}
+/***************************** Hero Headers */
 #showcase {
   background: var(--overlay-color);
   color: #fff;
-  height: 400px;
+  height: 800px;
   position: relative;
 }
 #showcase::before {
@@ -127,42 +203,27 @@ img {
   line-height: 1.5;
   font-weight: normal;
 }
-.btn {
-  display: inline-block;
-  border: none;
-  border-radius: 5px;
-  background: var(--menu-overlay);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  transition: all 1s ease-in-out;
-}
-.btn:hover {
-  opacity: 0.7;
-  background: var(--overlay-color);
-}
 /**************************************** Promo */
 #promo {
   display: flex;
-  flex-wrap: wrap;
-  background: #fff;
-  border: 10px solid #f4f4f4;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 10rem;
 }
 #promo h1 {
-  padding-left: 5px;
+  font-size: 2.5rem;
 }
 #promo p {
-  padding-left: 10px;
+  font-size: 1.5rem;
+  line-height: 1.2;
   padding: 1rem;
-}
-#promo p:last-child {
-  margin-bottom: 1rem;
 }
 /***************************************** Bottom Banner */
 #btm-banner {
   background: var(--overlay-color);
   color: #fff;
-  height: 400px;
+  height: 600px;
   position: relative;
 }
 #btm-banner::before {
@@ -187,11 +248,14 @@ img {
   text-align: center;
   line-height: 1.4;
   font-weight: normal;
+  font-size: 2rem;
 }
 /*********************************************** Menu Page */
 #dine {
   background: #f1f1f1;
+  padding-bottom: 10rem;
 }
+
 #dine .container {
   max-width: var(--max-width);
   margin: auto;
@@ -208,7 +272,7 @@ img {
 }
 /********* Drop down menu */
 .collapsible {
-  background-color: var(--primary-color);
+  background-color: #444;
   display: block;
   margin: 0 auto;
   color: white;
@@ -264,12 +328,16 @@ img {
 }
 #events .container {
   background: #f1f1f1;
-  padding: 1rem;
+  padding: 5rem 10rem;
   text-align: center;
+  max-width: 100%;
+}
+#events .container .wrapper p {
+  padding: 2rem 10rem;
 }
 #events .container .wrapper {
   background: #fff;
-  max-width: 100%;
+  width: 100%;
   margin: auto;
   padding: 0.5rem;
 }
@@ -277,7 +345,6 @@ img {
   max-width: 80%;
   margin: auto;
 }
-
 /************************************ About  */
 #about {
   display: flex;
@@ -287,12 +354,16 @@ img {
 }
 #about .container {
   background: #f1f1f1;
-  padding: 1rem;
+  padding: 5rem 10rem;
   text-align: center;
+  max-width: 100%;
+}
+#about .container .wrapper p {
+  padding: 2rem 10rem;
 }
 #about .container .wrapper {
   background: #fff;
-  max-width: 100%;
+  width: 100%;
   margin: auto;
   padding: 0.5rem;
 }
@@ -301,11 +372,15 @@ img {
   margin: auto;
 }
 /************************************* Contact Form  */
+form {
+  width: 80%;
+  margin: auto;
+}
 .container.contact {
   width: 100%;
 }
 .contact .text-fields {
-  margin: 1rem 0;
+  margin: 1rem 8rem;
   display: grid;
   grid-template-areas:
     "name"
@@ -317,19 +392,22 @@ img {
 }
 .name-input {
   grid-area: name;
+  height: 20px;
 }
 .email-input {
   grid-area: email;
+  height: 20px;
 }
 .subject-input {
   grid-area: subject;
+  height: 20px;
 }
 .message-input {
   grid-area: message;
   height: 100px;
 }
 button[type="submit"] {
-  width: 50%;
+  width: 30%;
 }
 /*********************************** Footer  */
 .footer {
@@ -356,9 +434,17 @@ footer a:hover {
   display: inline-block;
   padding: 0 1rem;
 }
-/***************************** Tablet Adjustments  */
-@media screen and (min-width: 500px) {
-  .food-banner,
+/***************************** Small Laptop Adjustments  */
+@media screen and (max-width: 1300px) {
+  #events .container,
+  #events .container .wrapper p,
+  #about .container,
+  #about .container .wrapper p {
+    padding: 2rem;
+  }
+}
+
+/* .food-banner,
   .drink-banner {
     height: 300px;
   }
@@ -375,5 +461,4 @@ footer a:hover {
   }
   .contact .text-fields {
     margin: 1rem 5rem;
-  }
-}
+  } */
