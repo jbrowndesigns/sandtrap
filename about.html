@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <!-- To Do
-      1. Hello! I hope my code isn't hard to understand. If you like what I have done, you can contact me at brown.jdesign@gmail.com
+      1. Add in smooth scroll effect
+      2. Add in social links on footer
 
      -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -45,7 +46,7 @@
     <meta property="og:url" content="https://www.thesandtrapsportsbar.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="The Sand Trap" />
-    <meta property="og:image" content="img/preview/index.png" />
+    <meta property="og:image" content="img/preview/about.png" />
     <meta
       property="og:description"
       content="The Sandtrap Sports Bar & Grill Is Your One Stop Destination For Food, Drinks and Entertainment!"
@@ -66,7 +67,7 @@
       media="screen and (min-width: 900px)"
       href="css/desktop.css"
     />
-    <link rel="stylesheet" media="screen and (max-width: 899px)" href="#" />
+    <link rel="stylesheet" media="screen and (min-width: 1800px)" href="#" />
     <title>The Sand Trap Sports Bar & Grill</title>
   </head>
   <body id="home">
@@ -93,7 +94,7 @@
                   >
                 </li>
                 <li>
-                  <a href="about.html"
+                  <a href="about.html" class="current"
                     ><i class="far fa-address-card"></i> About</a
                   >
                 </li>
@@ -107,9 +108,7 @@
     <div id="navbar" class="desktop">
       <ul>
         <li>
-          <a href="index.html" class="current"
-            ><i class="fas fa-home"></i> Home</a
-          >
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
         </li>
         <li>
           <a href="menu.html"><i class="fas fa-glass-cheers"></i> Dine</a>
@@ -118,35 +117,86 @@
           <a href="events.html"><i class="fab fa-leanpub"></i> Events</a>
         </li>
         <li>
-          <a href="about.html"><i class="far fa-address-card"></i> About</a>
+          <a href="about.html" class="current"
+            ><i class="far fa-address-card"></i> About</a
+          >
         </li>
       </ul>
     </div>
-    <div class="flex">
-      <header id="showcase">
-        <div class="container showcase-container">
-          <h2>Awesome Food, Fantatsic Drinks & Inspiring Entertainment</h2>
-          <a href="about.html" class="btn">About Us</a>
+    <header id="showcase">
+      <div class="container showcase-container">
+        <h1>Who we are</h1>
+      </div>
+    </header>
+    <section id="about">
+      <div class="container">
+        <div class="wrapper">
+          <p>
+            Our locally and family owned business is conveniently located in
+            Beaumont, giving you easy access to the 10 freeway at Oak Valley
+            Parkway. Visit us today to enjoy an evening in an upscale yet
+            comfortable atmosphere, with friendly and energetic staff. You can
+            choose from our extensive menu of burgers, wraps, salads,
+            appetizers, specialty items and daily specials. Enjoy great
+            entertainment options, which vary every weekend.
+          </p>
         </div>
-      </header>
-      <div class="desktop banner"></div>
-    </div>
-    <section id="promo">
-      <h1 class="py-2">Your Local Spot</h1>
-      <p>
-        We take great pride in offering awesome food, vigorously poured drinks
-        and the best customer service possible. That's why we have been voted
-        the #1 sports bar multiple times! We have 16 HD TVs with Direct TV
-        featuring all the top sport channels so you won't miss a single game.
-      </p>
-
-      <p>
-        We also offer in house entertainment such as, monthly comedy shows
-        hosted by Johnny Cardinale, Live Trivia, pool tournaments and much more.
-        Check out our events section to find out more. So if you are winding
-        down after the day or looking for a tasty meal, The Sand Trap is the
-        perfect place to stop by.
-      </p>
+      </div>
+      <div style="width: 100%;">
+        <iframe
+          width="100%"
+          height="375"
+          src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=892%20Oak%20Valley%20Pkwy%2C%20Beaumont%2C%20CA%2092223+(The%20Sand%20Trap)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          ><a href="https://www.maps.ie/create-google-map/"
+            >Google map generator</a
+          ></iframe
+        >
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="py-2">Voted For #1 Sports Bar Multiple Years Over</h2>
+          <p>
+            Our service and exemplary customer service speaks for itself. We
+            would like to know how your experience was with us. Leave us your
+            comments or thoughts below.
+          </p>
+        </div>
+      </div>
+      <div class="container text-center contact">
+        <h2>Contact Us</h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="email"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
     </section>
     <section id="btm-banner">
       <div class="container btm-banner-container">
