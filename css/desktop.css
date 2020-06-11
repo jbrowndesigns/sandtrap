@@ -55,6 +55,9 @@ h2 {
 img {
   width: 100%;
 }
+.alert {
+  padding-top: 1rem;
+}
 /************************* Utilities */
 .py-1 {
   padding: 1.5rem 0;
