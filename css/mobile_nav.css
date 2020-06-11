@@ -10,8 +10,8 @@
   left: 0;
   z-index: 2;
   cursor: pointer;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   opacity: 0;
 }
 /******************************************** Hamburger Container */
@@ -20,8 +20,8 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   padding: 1rem;
   background: var(--menu-overlay);
   display: flex;
