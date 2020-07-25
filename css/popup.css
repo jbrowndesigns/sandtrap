@@ -1,3 +1,6 @@
+h1 {
+  line-height: 1.2;
+}
 #overlay {
   position: fixed;
   top: 0;
@@ -22,11 +25,17 @@
   position: fixed;
   z-index: 101;
 }
+.p-img {
+  display: block;
+  max-height: 650px;
+  max-width: 410px;
+  margin: 0 auto;
+}
 .cnt223 {
   /* min-width: 600px;
   width: 600px;
-  min-height: 150px;*/
-  margin: 100px;
+  min-height: 150px; */
+  margin: auto;
   background: #f3f3f3;
   position: relative;
   z-index: 103;
@@ -39,9 +48,10 @@
     margin: auto;
   }
 }
-@media screen and (min-width: 1400px) {
-  .cnt223 {
-    margin: 300px;
+
+@media screen and (min-width: 1140px) {
+  .close {
+    margin-left: 25%;
   }
 }
 .cnt223 p {
