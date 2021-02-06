@@ -17,6 +17,10 @@ h1 {
 }
 .cnt223 a {
   text-decoration: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .popup {
   width: 100%;
@@ -27,32 +31,21 @@ h1 {
 }
 .p-img {
   display: block;
-  max-height: 650px;
-  max-width: 410px;
+  max-height: 1020px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .cnt223 {
   /* min-width: 600px;
   width: 600px;
   min-height: 150px; */
-  margin: auto;
+  margin: 0 25% 0 25%;
   background: #f3f3f3;
   position: relative;
   z-index: 103;
   padding: 15px 35px;
   border-radius: 5px;
   box-shadow: 0 2px 5px #000;
-}
-@media screen and (max-width: 800px) {
-  .cnt223 {
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 1140px) {
-  .close {
-    margin-left: 25%;
-  }
 }
 .cnt223 p {
   clear: both;
@@ -75,4 +68,30 @@ h1 {
 }
 .cnt223 .x:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .cnt223 {
+    margin: auto;
+  }
+  .cnt223 a {
+    text-decoration: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .close {
+    margin-left: 25%;
+  }
+  .cnt223 a {
+    text-decoration: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
 }
