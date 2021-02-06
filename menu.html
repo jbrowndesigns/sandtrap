@@ -66,6 +66,7 @@
       media="screen and (min-width: 900px)"
       href="css/desktop.css"
     />
+    <link rel="stylesheet" href="css/popup.css" />
     <link rel="stylesheet" media="screen and (max-width: 899px)" href="#" />
     <title>The Sand Trap Sports Bar & Grill</title>
   </head>
@@ -116,6 +117,15 @@
           <a href="about.html"><i class="far fa-address-card"></i> About</a>
         </li>
       </ul>
+    </div>
+    <div class="popup">
+      <div class="cnt223">
+        <!-- <h1 class="py-2 text-center">Outside Dining Now Available!</h1> -->
+        <img class="p-img" src="/img/v-day.png" alt="" />
+        <p>
+          <a href="" class="close">X</a>
+        </p>
+      </div>
     </div>
     <header id="showcase" class="menu">
       <div class="container showcase-container">
@@ -869,21 +879,10 @@
         >
       </ul>
     </footer>
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.8.2.js"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
