@@ -27,12 +27,13 @@ h1 {
   margin: 0 auto;
   display: none;
   position: fixed;
+  top: 25px;
   z-index: 101;
 }
 .p-img {
   display: block;
-  max-height: 1020px;
-  max-width: 800px;
+  max-height: 720px;
+  max-width: 560px;
   margin: 0 auto;
 }
 .cnt223 {
