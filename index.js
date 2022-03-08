@@ -18,13 +18,13 @@ for (i = 0; i < coll.length; i++) {
 
 
 // Popup 
-// const pop = document.querySelector('.pop');
-// const closeButton = document.querySelector('.popupCloseButton');
+const pop = document.querySelector('.pop');
+const closeButton = document.querySelector('.popupCloseButton');
 
-// closeButton.addEventListener("click", closePop);
+closeButton.addEventListener("click", closePop);
 
-// function closePop(){
-// pop.style.display="none";
-// }
+function closePop(){
+pop.style.display="none";
+}
 
 
