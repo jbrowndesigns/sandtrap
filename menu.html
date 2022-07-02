@@ -69,6 +69,28 @@
     <link rel="stylesheet" href="css/popup.css" />
     <link rel="stylesheet" media="screen and (max-width: 899px)" href="#" />
     <title>The Sand Trap Sports Bar & Grill</title>
+    <script>
+      (function(e, t, r, n) {
+          var o, c, s;
+          o = e.document, c = t.children[0], s = o.createElement("script"), e.StorefrontSDKObject = "StorefrontSDK", e[e.StorefrontSDKObject] = {
+              executeCommand: function(t, r) {
+                  e[e.StorefrontSDKObject].buffer.push([t, r])
+              },
+              buffer: []
+          }, s.async = 1, s.src ='https://web-apps.cdn4dd.com/webapps/sdk-storefront/latest/sdk.js' , t.insertBefore(s, c)
+      })(window, document.head);
+      StorefrontSDK.executeCommand('renderFloatingButton', {
+          businessId: 212044,
+          businessSlug: 'The Sand Trap Sports Bar & Grill',
+          floatingBar: true,
+          position: 'bottom',
+          buttonAlignment: 'center',
+          backgroundColor: 'transparent',
+          buttonBackgroundColor: '#B0511B',
+          borderColor: 'transparent',
+          buttonText: 'Order Pickup & Delivery',
+      })
+    </script>
   </head>
   <body id="home">
     <div class="mobile">
@@ -663,91 +685,113 @@
         <div class="food-banner"></div>
         <!------------------------------------------- Drink section -->
         <button class="collapsible">
+          American Made Cocktails
+        </button>
+        <div class="content">
+          <dt>Honey Badger</dt>
+          <dd>
+            Jack Daniel's Tennessee Honey Whisky and Lemonade.
+          </dd>
+          <dt>Jack Apple Music</dt>
+          <dd>
+            Jack Daniel's Tennessee Apple Whisky and Cock & Bull Ginger Beer.
+          </dd>
+          <dt>Lynchburg Lemonade</dt>
+          <dd>
+            Jack Daniel's tennessee Whiskey, Triple Sec and Lemonade.
+          </dd>
+          <dt>Jack & Ginger</dt>
+          <dd>
+            Jack Daniel's tennessee Whiskey and Ginger Ale.
+          </dd>
+          <dt>Gentleman's Manhattan</dt>
+          <dd>
+            Gentleman Jack Tennessee Whiskey, Sweet Vermouth and a dash of Bitters. Garnished with a cherry. 
+          </dd>
+          <dt>Gentleman's Manhattan</dt>
+          <dd>
+            Gentleman Jack Tennessee Whiskey, Sweet Vermouth and a dash of Bitters. Garnished with a cherry. 
+          </dd>
+          <dt>Tito's Bloody Mary</dt>
+          <dd>
+            Tito's Handmade Vodka with our famous Bloody Mary Mix and garnished with all the fixings.
+          </dd>
+          <dt>Tito's Dirty Martini</dt>
+          <dd>
+            Tito's Handmade Vodka with Olive juice and garnished with Olives.
+          </dd>
+          <dt>Tito's On The Beach</dt>
+          <dd>
+            Tito's Handmade Vodka, Passoa Passion Fruit Liqueur, Simple Syrup and a splash of Sprite.
+          </dd>
+          <dt>Tito's Passion Berry</dt>
+          <dd>
+            Tito's handmade Vodka, Cock & Bull Ginger Beer, Lime Juice and Monin Watermelon Syrup.
+          </dd>
+          
+        </div>
+        <button class="collapsible">
           Margaritas
         </button>
         <div class="content">
           <dl>
-            <dt>Cuervo Golden Margarita</dt>
+            <dt>Organic Margarita</dt>
             <dd>
-              The gold standard of margaritas, Jose Cuervo Especial shaken with fresh lime juice, sour mix and orange curacao. Served on the rocks or blended.
+              Tres Agaves Organic Silver Tequila and Tres Agaves Organic Margarita Mix. Served on the rocks with a lime. Available in Lime or Strawberry. 
+            </dd>
+            <dt>Mango Chili Margarita</dt>
+            <dd>
+              Tres Agaves Organic Silver Tequila and Tres Agaves Organic Mango Chili Margarita Mix. Served on the rocks with a lime.
+            </dd>
+            <dt>Pineapple Ginger Margarita</dt>
+            <dd>
+              Tres Agaves Organic Silver Tequila and Tres Agaves Organic Pineapple Ginger Margarita Mix. Served on the rocks with a lime.
+            </dd>
+            <dt>Cadillac Margarita</dt>
+            <dd>
+              1800 Reposado Tequila, Cointreau and Margarita Mix. Served on the rocks with a lime and with a side shot of Orange Liqueur.
+            </dd>
+            <dt>Ghost Spicy Margarita</dt>
+            <dd>
+              Ghost Spicy Silver Tequila and Tres Agaves Organic Margarita Mix.
             </dd>
 
-            <dt>Cuervo La Bomba</dt>
-            <dd>Shake it up with style and taste with Jose Cuervo Sliver Especial, triple sec, pineapple and orange juices plus the classic Grand Marnier float!</dd>
-
-            <dt>Riviera Margarita</dt>
-            <dd>A cadillac you will never forget made with Jose Cuervo Tradicional 100% Agave Tequila shaken with fresh lime juice, sour mix and the classic Grand Marnier float!</dd>
-
-            <dt>Don Julio Platinum Martini</dt>
-            <dd>
-              Indulge in the precious state of Don Julio Blanco shaken with triple sec, cranberry juice, Grand Marnier and fresh lime juice. Indulge!
-            </dd>
-
-            <dt>Don Julio Margarita Legendario</dt>
-            <dd>
-              Get stuck in the sand trap with this exquisite taste of Don Julio Blanco, sweet and sour, fresh lime juice and the classic Grand Marnier float! Just sit back and call for the Caddy!
-            </dd>
         </div>
         <button class="collapsible">
-          Martini Bar
+          The Back 9 Martinis
         </button>
         <div class="content">
           <dt>Cosmopolitan</dt>
           <dd>
             Ketel One Vodka, Cranberry juice and fresh lime.
           </dd>
-
-          <dt>Apple Martini</dt>
-          <dd>
-            Ketel One Vodka, DeKuyper Sour Apple Pucker Schnapps and fresh lime juice.
-          </dd>
-
           <dt>Pama-Tini</dt>
           <dd>
-            Smirnoff Pomegranate Vodka, pomegranate liqueur, splash of orange juice, fresh lime.
+            Smirnoff Pomegranate Vodka, pomegranate liqueur, splash of orange juice.
           </dd>
-
           <dt>Raspberry Lemon Drop</dt>
           <dd>
-            Ketel One Citroen Vodka, Chambord and fresh lemon served with a sugar rim.
+            Grey Goose LeCitron, Chambord and fresh lemon served with a sugar rim.
           </dd>
-
           <dt>Cantaloupe Martini</dt>
           <dd>
-            Grey Goose L'Orange Vodka, DeKuyper Watermelon Pucker Schnapps and a splash of orange juice.
+            Absolute Mandrin Vodka, Watermelon Pucker and a splash of orange juice.
           </dd>
+          <dt>Cucumber Martini</dt>
+          <dd>
+            Effen Cucumber Vodka, St. Germain with a splash of Sprite.
+          </dd>
+          <dt>Colada-tina</dt>
+          <dd>
+            Ciroc Summer Coloda, pineapple, Pina Colada Mix, Splash of sweet n sour and fresh lime.
+          </dd>
+          <dt>Peach Jalapeño Martini</dt>
+          <dd>
+            Peach puree, Ciroc Peach Vodka, sweet n sour, Sprite, muddled jalapeños with a tajin rim.
+          </dd>
+
         </div>
-        <button class="collapsible">
-          White Wines
-        </button>
-        <div class="content">
-          <dl>
-            <dt>Century Cellars Chardonnay</dt>
-            <dt>Snap Dragon Chardonnay</dt>
-            <dt>Newharbor Sauvignon Blanc</dt>
-            <dt>Sagelands Riesling</dt>
-            <dt>Beringer White Zinfandel</dt>
-            <dt>Stella Pinot Grigio</dt>
-            <dt>Bogle Chardonnay</dt>
-          </dl>
-        </div>
-        <button class="collapsible">
-          Red Wines
-        </button>
-        <div class="content">
-          <dl>
-            <dt>Century Cellars Pinot Noir</dt>
-            <dt>Century Cellars Merlot</dt>
-            <dt>Century Cellars Cabernet Sauvignon</dt>
-            <dt>Snap Dragon Cabernet Sauvignon</dt>
-            <dt>Sterling Vintner's Collection Meritage</dt>
-            <dt>Seasonal - Sangria</dt>
-            <dt>Menage Trios</dt>
-            <dt>Joel Gott Cabernet Sauvignon</dt>
-            <dt>BV-Beauleau Vineyard Cabernet Sauvignon</dt>
-          </dl>
-        </div>
-        <button class="collapsible">
+        <!-- <button class="collapsible">
           Top Shelf
         </button>
         <div class="content">
@@ -764,7 +808,7 @@
             <dt>Grand Mariner 1800</dt>
             <dt>Don Julio Real</dt>
           </dl>
-        </div>
+        </div> -->
         <button class="collapsible">
           Sand Trap Specials
         </button>
@@ -854,6 +898,24 @@
             <dt>Point The Way IPA</dt>
           </dl>
         </div>
+        <button class="collapsible">
+          Wines
+          </button>
+          <div class="content">
+            <h3 class="py-1">White</h3>
+            <dl>
+              <dt>Hess Shirtail Rose</dt>
+              <dt>Menage A Trois Sweet Moscato</dt>
+              <dt>Matua Sauvignon Blanc</dt>
+              <dt>Caposaldo Pinot Grigio</dt>
+              <dt>Bogle Chardonnay</dt>
+              <dt>Twenty Acres Chardonnay</dt>
+            </dl>
+            <h3 class="py-1">Red</h3>
+            <dl>
+              <dt>Menage A Trois red Blend</dt>
+            </dl>
+          </div>
         <div class="drink-banner"></div>
       </div>
     </section>

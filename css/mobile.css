@@ -342,7 +342,7 @@ textarea {
 /*********************************** Footer  */
 .footer {
   background: var(--primary-color);
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
