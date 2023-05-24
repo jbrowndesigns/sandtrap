@@ -43,9 +43,17 @@ pop.style.display="none";
 
 **********/
 
+// function addNewPrefix() {
+//   const dtElements = document.querySelectorAll('dl dt.new');
+
+//   for (const dtElement of dtElements) {
+//     dtElement.textContent = 'New: ' + dtElement.textContent;
+//   }
+// }
+
 
 function capitalizeWords() {
-  const parentElement = document.querySelector('.content dl.capitalized');
+  const parentElement = document.querySelector('.content dl.capitalize');
   const dtElements = parentElement.querySelectorAll('dt');
 
   for (const dtElement of dtElements) {
@@ -64,16 +72,9 @@ function capitalizeWords() {
   }
 }
 
-function addNewPrefix() {
-  const dtElements = document.querySelectorAll('dl dt.new');
-
-  for (const dtElement of dtElements) {
-    dtElement.textContent = 'New: ' + dtElement.textContent;
-  }
-}
 
 
 capitalizeWords();
-addNewPrefix();
+// addNewPrefix();
 
 
