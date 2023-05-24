@@ -43,13 +43,13 @@ pop.style.display="none";
 
 **********/
 
-// function addNewPrefix() {
-//   const dtElements = document.querySelectorAll('dl dt.new');
+function addNewPrefix() {
+  const dtElements = document.querySelectorAll('dl dt.new');
 
-//   for (const dtElement of dtElements) {
-//     dtElement.textContent = 'New: ' + dtElement.textContent;
-//   }
-// }
+  for (const dtElement of dtElements) {
+    dtElement.textContent = 'New: ' + dtElement.textContent;
+  }
+}
 
 
 function capitalizeWords() {
@@ -75,6 +75,6 @@ function capitalizeWords() {
 
 
 capitalizeWords();
-// addNewPrefix();
+addNewPrefix();
 
 
