@@ -2,6 +2,7 @@
   --overlay-color: rgba(51, 51, 51, 0.5);
   --menu-overlay: rgba(51, 51, 51, 0.95);
   --primary-color: #333;
+  --dark-color: #111;
   --link-hover: #7cfc00;
   --menu-speed: 0.75s;
   --max-width: 960px;
@@ -81,6 +82,9 @@ img {
 }
 .line {
   text-decoration: underline;
+}
+.line-height-increase{
+  line-height: 50px;
 }
 /************************************* Banner */
 .banner {
@@ -192,6 +196,9 @@ img {
   font-weight: normal;
 }
 /*********************************************** Menu Page */
+.btn.order-online {
+  font-size: 16px;
+}
 #dine {
   background: #f1f1f1;
 }
@@ -341,7 +348,7 @@ textarea {
 }
 /*********************************** Footer  */
 .footer {
-  background: var(--primary-color);
+  background: var(--dark-color);
   height: 250px;
   display: flex;
   flex-direction: column;
