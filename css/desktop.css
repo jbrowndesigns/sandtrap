@@ -19,6 +19,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+html {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 80px;
+}
+
+section {
+  scroll-snap-align: top;
 }
 
 body::-webkit-scrollbar {
@@ -50,6 +61,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 a:visited {
   color: #fff;
@@ -278,8 +290,6 @@ img {
 .btn.order-online {
   font-size: .5em;
   padding: 1rem;
-  color: #fff;
-  text-decoration: none;
 }
 
 #dine {
@@ -433,15 +443,15 @@ form {
 }
 .name-input {
   grid-area: name;
-  height: 20px;
+  height: 25px;
 }
 .email-input {
   grid-area: email;
-  height: 20px;
+  height: 25px;
 }
 .subject-input {
   grid-area: subject;
-  height: 20px;
+  height: 25px;
 }
 .message-input {
   grid-area: message;

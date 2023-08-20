@@ -19,7 +19,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+html {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 40px;
+}
+
+section {
+  scroll-snap-align: top;
+}
+
 .desktop {
   display: none;
 }
@@ -35,6 +46,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 a:visited {
   color: #fff;
@@ -197,7 +209,7 @@ img {
 }
 /*********************************************** Menu Page */
 .btn.order-online {
-  font-size: 16px;
+  font-size: 18px;
 }
 #dine {
   background: #f1f1f1;
