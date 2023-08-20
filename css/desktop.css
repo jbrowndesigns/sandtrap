@@ -278,6 +278,8 @@ img {
 .btn.order-online {
   font-size: .5em;
   padding: 1rem;
+  color: #fff;
+  text-decoration: none;
 }
 
 #dine {
