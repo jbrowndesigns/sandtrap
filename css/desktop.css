@@ -19,8 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  
+  scroll-behavior: smooth; 
 }
 
 html {
@@ -45,9 +44,6 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid #000;
 }
 
-.mobile {
-  display: none;
-}
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.2rem;
@@ -82,8 +78,14 @@ h2 {
 img {
   width: 100%;
 }
+.mobile {
+  display: none;
+}
 .alert {
   padding-top: 1rem;
+}
+.font-awesome-increase{
+  font-size: 50px;
 }
 /************************* Utilities */
 .py-1 {
@@ -134,6 +136,18 @@ img {
 
 .line-height-increase{
   line-height: 60px;
+}
+
+.flex {
+  display: flex;
+}
+.flex > div {
+  align-items: center;
+  padding: 0 1rem;
+}
+.flex-col{
+  flex-direction: column;
+  justify-content: center;
 }
 
 /************************************* Banner */
