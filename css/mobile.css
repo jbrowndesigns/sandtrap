@@ -277,6 +277,10 @@ img {
 .content dd:last-child {
   margin-bottom: 2rem;
 }
+
+.food-img {
+  max-width: 50%;
+  }
 /*********************************** Events  */
 #events {
   display: flex;
