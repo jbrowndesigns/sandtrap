@@ -1,4 +1,14 @@
 "use strict"
+// POP UP
+const pop = document.querySelector('.pop');
+const closeButton = document.querySelector('.popupCloseButton');
+
+closeButton.addEventListener("click", closePop);
+
+function closePop(){
+pop.style.display="none";
+}
+
 // Menu JS
 
 

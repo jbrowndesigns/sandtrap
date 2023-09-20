@@ -66,3 +66,11 @@
   display: inline-block;
   font-weight: bold;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex > div > img {
+  padding: 0 5px;
+}
