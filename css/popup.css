@@ -33,9 +33,13 @@
   padding: 15px 5%;
 }
 
-.pop > div > img {
-  max-height: 80vh;
+/* .pop > div > img {
+  max-height: 70vh;
   width: 80%;
+} */
+
+.pop-img{
+  max-height: 70vh;
 }
 
 .popupCloseButton {
@@ -69,8 +73,6 @@
 
 .flex {
   display: flex;
+  justify-content: center;
 }
 
-.flex > div > img {
-  padding: 0 5px;
-}
